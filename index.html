@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator - Mayur Nagrare</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Password Generator</h1>
+
+        <div class="input-group">
+            <label for="length">Password Length:</label>
+            <input type="number" id="length" value="12" min="6" max="128">
+        </div>
+
+        <div class="checkbox-group">
+            <input type="checkbox" id="includeUppercase" checked>
+            <label for="includeUppercase">Include Uppercase</label>
+        </div>
+
+        <div class="checkbox-group">
+            <input type="checkbox" id="includeLowercase" checked>
+            <label for="includeLowercase">Include Lowercase</label>
+        </div>
+
+        <div class="checkbox-group">
+            <input type="checkbox" id="includeNumbers" checked>
+            <label for="includeNumbers">Include Numbers</label>
+        </div>
+
+        <div class="checkbox-group">
+            <input type="checkbox" id="includeSymbols">
+            <label for="includeSymbols">Include Symbols</label>
+        </div>
+
+        <button id="generateBtn">Generate Password</button>
+
+        <div class="result-box">
+            <input type="text" id="passwordDisplay" readonly>
+            <button id="copyBtn">Copy</button>
+        </div>
+    </div>
+
+    <footer>
+        Created by Mayur Nagrare
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
